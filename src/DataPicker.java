@@ -8,11 +8,11 @@ public class DataPicker {
         driver.get("http://www.expedia.com");
         driver.findElement(By.id("package-departing-hp-package")).click();
         Thread.sleep(2000);
-        driver.findElement(By.cssSelector("button datepicker-paging datepicker-next btn-paging btn-secondary next")).click();
+        driver.findElement(By.cssSelector("button.datepicker-paging.datepicker-next.btn-paging.btn-secondary.next")).click();
         Thread.sleep(2000);
-        driver.findElement(By.cssSelector("button datepicker-paging datepicker-next btn-paging btn-secondary next")).click();
+        driver.findElement(By.cssSelector("button.datepicker-paging.datepicker-next.btn-paging.btn-secondary.next")).click();
         Thread.sleep(2000);
-        driver.findElement(By.cssSelector("button[data-year='2019'][data-month=11'[data-day=2019'")).click();
+        driver.findElement(By.cssSelector("button[data-year='2019'][data-month='11'][data-day='29']")).click();
 
     }
 }
