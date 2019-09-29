@@ -5,6 +5,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExplicitWaitExample {
+    // Sinan Tas Cration Date: 2019
+    //Ticket #123478 Ticket submit Scenario
     public static void main(String[] args) {
         Browser myBrowser = new Browser();
         WebDriver driver = myBrowser.invokeChromeBrowser();
