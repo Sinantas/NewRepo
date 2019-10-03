@@ -11,7 +11,7 @@ public class Frames {
         WebDriver driver = myBrowser.invokeChromeBrowser();
         driver.get("https://jqueryui.com/droppable/");
         WebDriverWait wait =new WebDriverWait(driver,10);
-        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("demo-frame")));
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("iframe.demo-frame")));
         WebElement source =driver.findElement(By.cssSelector("#draggable"));
         WebElement target = driver.findElement(By.cssSelector("#droppable"));
         Actions myActions = new Actions(driver);
